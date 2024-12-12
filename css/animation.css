@@ -1,0 +1,13 @@
+.header-container,
+.hero-wrapper-title,
+.logo,
+.header-buttons,
+nav ul li {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.hero-wrapper-title {
+  opacity: 0;
+  transform: translateY(90px);
+}

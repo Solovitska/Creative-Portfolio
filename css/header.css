@@ -1,0 +1,105 @@
+.advantages {
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(to right, #0b3d65, #8090e9, #e5f1f6);
+  padding: 60px 20px;
+}
+
+.section-title-my {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #2c3e50;
+  font-size: 32px;
+  font-weight: 700;
+  background-image: url(./image/years/frame.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.advantages-list > li {
+  color: #34495e;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 50px;
+  background: #ecf0f1;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.advantages-list > li:before {
+  content: '✔';
+  font-size: 20px;
+  color: #1abc9c;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.advantages-list > li:hover {
+  background-color: #1abc9c;
+  color: white;
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.advantages-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.advantages-gallery > li {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.advantages-gallery > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.advantages-gallery > li:hover > img {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-gallery > li {
+    width: 320px;
+    height: 420px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages-gallery > li {
+    width: 370px;
+    height: 500px;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

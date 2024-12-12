@@ -1,0 +1,139 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* */
+
+
+:root {
+  /* Font colors */
+  --main-font-color: #f4f4f9; /* Ніжний білий */
+  --secondary-font-color: #24292e; /* Темний графіт */
+  --link-color: #4a90e2; /* Насичений синій */
+  --accent-color: #ff7f50; /* Кораловий акцент */
+
+  /* Background colors */
+  --main-background-color: #1c3d5a; /* Глибокий синьо-зелений */
+  --secondary-background-color: #eef2f5; /* Світло-сірий */
+  --highlight-background-color: #ffd700; /* Золотистий для акцентів */
+
+  /* Gradients */
+  --main-gradient: linear-gradient(135deg, #1c3d5a, #4a90e2);
+  --accent-gradient: linear-gradient(135deg, #ff7f50, #ff4500);
+
+  /* Borders */
+  --border-color: #d9d9d9; /* Світлий для делікатних деталей */
+  --hover-border-color: #4a90e2; /* Синій для hover ефектів */
+
+  /* Animation */
+  --transition-dur-and-func: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-background-color, #181818);
+  color: var(--main-font-color, #ffffff);
+  font-family: "Gilroy", sans-serif;
+  font-weight: 700;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+p {
+  text-indent: 20px;
+}
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  padding: 0;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
+
+.hidden{
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  min-width: 360px;
+  height: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MOBILE */
+@media screen and (min-width: 475px) {
+  .container {
+    width: 480px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    min-width: 1440px;
+    max-width: 1920px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .text{
+    font-size: 0px;
+  }
+ .fade-up{
+  font-size: 60px;
+ }
+ .text-years{
+  font-size: 80px;
+ }
+}

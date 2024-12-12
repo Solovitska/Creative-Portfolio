@@ -1,53 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creative Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Сrafty-creations description" />
+    <title>Сrafty-creations</title>
+    <link rel="icon" type="image/x-icon" href="./image/icons/solo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/page.css" />
+    <link rel="stylesheet" href="./css/animation.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   <i class="fas fa-heart" style="font-size: 30px; color: #ee3506;"></i>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
     <header>
+      <div class="container header-container">
+
+          <img
+            class="logo"
+            src="./image/icons/solo.png"
+            width="400"
+            height="250"
+            alt="logo"
+          />
+        </a>
         <nav>
-            <div class="logo">My Portfolio</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="#">My works</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Advantages</a></li>
+
+          </ul>
         </nav>
-        <div class="hero">
-            <h1>Welcome to My Creative Portfolio</h1>
-            <p>Showcasing My Work & Projects</p>
+        <div class="header-buttons">
+          <button class="burger-btn">
+            <img
+              src="./image/burger-menu.svg"
+              width="40"
+              height="20"
+              alt="burger menu button"
+            />
+          </button>
+          <button type="button" aria-label="lang button">UA</button>
         </div>
+      </div>
+
+      <!-- Mobile -->
+      <nav class="mobile-menu">
+        <ul>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">My works</a></li>
+          <li><a href="#">Advantages</a></li>
+        </ul>
+      </nav>
     </header>
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>This is where you introduce yourself and your creative journey.</p>
-    </section>
-    <section id="services" class="section">
-        <h2>Services</h2>
-        <div class="service-cards">
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Creating beautiful and functional websites.</p>
+    <main>
+      <section class="section hero-section">
+        <div class="container">
+          <div class="hero-wrapper">
+            <div class="hero-wrapper-title">
+              <p>Embroidery is more than just art to me.</p>
+              <h1>Each stitch</h1>
+              <p>reflects emotions, and every piece carries a unique story.<br />
+                It is a silent dialogue between the soul and the canvas.
+              </p>
             </div>
-            <div class="card">
-                <h3>Graphic Design</h3>
-                <p>Designing logos, banners, and other visual elements.</p>
-            </div>
-            <div class="card">
-                <h3>Photography</h3>
-                <p>Capturing stunning moments and visuals.</p>
-            </div>
+          </div>
         </div>
-    </section>
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <p>Get in touch for collaborations or inquiries.</p>
-    </section>
-    <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
-    </footer>
-</body>
+      </section>
+      <div class="container">
+        <h2 class="card-title"> About Me </h2>
+      <p class="text">
+        <strong>
+          When I embroider, I feel a deep sense of calm and focus.
+          Each stitch becomes a part of my soul, and the colors bring to life the emotions I want to convey.Embroidery gives me a sense of creative flow,
+          allowing me to forget about everyday worries.</strong>
+        Always, while working, I feel joy and inspiration as I see my ideas come to life.
+        Each new piece brings me satisfaction and pride in the result, and the process of embroidery becomes a way to express my feelings and experiences.
+      </p>
+    </div>
+    </div>
+      <section class="section my-collection swiper-section">
+        <div class="container">
+          <h2 class="card-title"> My works </h2>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <!-- Slide 1 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/peonys.webp)"
+              >
+                <div class="slide-content">
+                  <div>
+                    <h3>Peonies are beautiful<br> flowers</h3>
+                  </div>
+                  <i class="fas fa-heart" style="font-size: 20px; color: #fe2014ed;"></i>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/angel.webp)"
+              >
+                <div class="slide-content">
+                  <div>
+
+                    <h3>Guardian angel</h3>
+                  </div>
+                  <i class="fas fa-heart" style="font-size: 20px; color: #fe2014ed;"></i>
+                </div>
+              </div>
+              <!-- Slide 3 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/hands.webp)"
+              >
+                <div class="slide-content">
+                  <div>
+
+                    <h3 class="title-hands">Hands</h3>
+                  </div>
+                  <i class="fas fa-heart" style="font-size: 20px; color: #fe2014ed;"></i>
+                </div>
+              </div>
+              <div
+              class="swiper-slide"
+              style="background-image: url(./image/slider/women`s.webp)"
+            >
+              <div class="slide-content">
+                <div>
+                  <h3>Women's yshyvanka
+                </div>
+                <i class="fas fa-heart" style="font-size: 20px; color: #fe2014ed;"></i>
+              </div>
+            </div>
+              <!-- Slide 4 -->
+              <div
+                class="swiper-slide"
+                style="background-image: url(./image/slider/photo4.webp)"
+              >
+                <div class="slide-content">
+                  <div>
+                    <h3>Men's Vyshyvanka</h3>
+                  </div>
+                  <i class="fas fa-heart" style="font-size: 20px; color: #fe2014ed;"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="navigation-btns">
+              <button class="button-prev" aria-label="button prev">
+                <img
+                  src="./image/slider/arrow.svg"
+                  width="24"
+                  height="24"
+                  alt="arrow"
+                />
+              </button>
+              <button class="button-next" aria-label="button next">
+                <img
+                  src="./image/slider/arrow.svg"
+                  width="24"
+                  height="24"
+                  alt="arrow "
+                />
+              </button>
+            </div>
+          </div>
+          </div>
+</section>
+<section class="section advantages">
+  <h2 class="section-title-my">Bead Embroidery Advantages</h2>
+
+  <ul class="advantages-list">
+    <li data-aos="fade-up" data-aos-delay="100">Visual Appeal</li>
+    <li data-aos="fade-up" data-aos-delay="200">Durability</li>
+    <li data-aos="fade-up" data-aos-delay="300">Uniqueness</li>
+    <li data-aos="fade-up" data-aos-delay="400">Therapeutic Effect</li>
+    <li data-aos="fade-up" data-aos-delay="500">Ability to create three-dimensional designs</li>
+  </ul>
+
+  <ul class="advantages-gallery">
+    <li><img src="./image/advantages/flover1.webp" alt="Image 1"></li>
+    <li><img src="./image/advantages/flovers5.webp" alt="Image 2"></li>
+    <li><img src="./image/advantages/flover3.webp" alt="Image 3"></li>
+  </ul>
+</section>
+
+
+      <section class="section years-section">
+        <div class="container">
+          <h2 class="text-years">Through embroidery, we pass down love, patience,<br>and creativity from generation to generation.</h2>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./js/burger-menu.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/swiper-config.js"></script>
+  </body>
 </html>
