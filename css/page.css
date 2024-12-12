@@ -94,7 +94,7 @@ header {
   height: 100%;
   gap: 40px;
   padding-bottom: 40px;
-  padding-top: auto;
+  /* padding-top: auto; */
 }
 .hero-section .hero-wrapper .hero-wrapper-title {
   display: flex;
