@@ -161,7 +161,7 @@ header {
   color: var(--accent-color);
 }
 
-/* PROJECT SECTION */
+/* my-collection SECTION */
 .my-collection{
   /* padding: 60px 0 48px; */
   position: relative;
@@ -317,7 +317,7 @@ header {
 }
 
 @media screen and (min-width: 1920px) {
-  .projects-section h2 {
+  .my-collection h2 {
     font-size: 20px;
   }
   .fas {
