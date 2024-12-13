@@ -95,11 +95,17 @@
     width: 320px;
     height: 420px;
   }
+  .advantages-list{
+    font-size: 50px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
   .advantages-gallery > li {
     width: 370px;
     height: 500px;
+  }
+  .advantages-list{
+    font-size: 300px;
   }
 }

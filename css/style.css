@@ -11,7 +11,7 @@ html {
   --main-font-color: #f4f4f9; /* Ніжний білий */
   --secondary-font-color: #24292e; /* Темний графіт */
   --link-color: #4a90e2; /* Насичений синій */
-  --accent-color: #ff7f50; 
+  --accent-color: #ff7f50;
 
   /* Background colors */
   --main-background-color: #1c3d5a; /* Глибокий синьо-зелений */
@@ -128,7 +128,7 @@ img {
     padding-right: 60px;
   }
   .text{
-    font-size: 0px;
+    font-size: 40px;
   }
  .fade-up{
   font-size: 60px;
