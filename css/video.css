@@ -1,0 +1,71 @@
+/* Стилі для секції з відео */
+.video-section {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50; /* Трохи темніший фон для сучасного вигляду */
+  border-radius: 20px;
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.5); /* Глибокий ефект тіні */
+  margin-bottom: 60px;
+  transition: all 0.3s ease-in-out; /* Плавні анімації */
+}
+
+/* Стилі для відео у колі */
+.video-circle {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px; /* Округліший вигляд */
+  box-shadow: 0 4px 20px rgba(86, 126, 236, 0.6); /* М’яка тінь для відео */
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.4s ease, filter 0.4s ease; /* Анімації */
+}
+
+/* Ефекти при наведенні */
+.video-circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 50px rgba(0, 0, 0, 0.7);
+  filter: brightness(1.1); /* Легке освітлення під час наведення */
+}
+
+/* Мобільні стилі для відео */
+@media (max-width: 768px) {
+  .video-circle {
+    width: 100%;
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 375px) {
+  .video-circle {
+    width: 100%;
+    max-width: 370px;
+  }
+}
+
+/* Стилі для кнопок (якщо є) */
+button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 50px; /* Округлі кути для кнопки */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Легка анімація при наведенні на кнопку */
+}
+
+/* Стилі для тексту у секціях */
+h2, p {
+  font-family: 'Manrope', sans-serif;
+  color: #ecf0f1;
+}
+
