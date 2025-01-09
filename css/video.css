@@ -46,7 +46,7 @@
   }
 }
 
-/* Стилі для кнопок (якщо є) */
+/* */
 button {
   background-color: #3498db;
   color: #fff;
@@ -68,4 +68,13 @@ h2, p {
   font-family: 'Manrope', sans-serif;
   color: #ecf0f1;
 }
+
+
+/* DESKTOP */
+@media screen and (min-width: 1440px) {
+
+    .video-circle{
+      width: 100%;
+      max-width: 1280px;}
+    }
 
