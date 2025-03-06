@@ -268,7 +268,7 @@
       url("../image/hero/girls.webp");
   }
   .years-section {
-    background-image: url("../image/hero/girls.webp");
+    background-image: url("../image/hero/girl-7.webp");
 
   }
 }
@@ -360,5 +360,8 @@
   .years-section:before {
     top: -40%;
   }
+  .years-section {
+    background-image: url("../image/hero/girl-7.webp");
 
+}
 }
