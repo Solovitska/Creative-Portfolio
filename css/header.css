@@ -101,6 +101,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+ 
   .advantages-gallery > li {
     width: 370px;
     height: 500px;
