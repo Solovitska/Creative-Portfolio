@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./css/video.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
   </head>
   <body>
     <header>
@@ -42,6 +43,7 @@
           <li><a href="#advantages">Advantages</a></li>
         </ul>
       </nav>
+
     </header>
     <main>
       <section class="section hero-section">
@@ -74,7 +76,7 @@
           <h2 class="card-title">My Works</h2>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <!-- Slides -->
+              <!-- Slides 1 -->
               <div class="swiper-slide" style="background-image: url(./image/slider/peonys.webp)">
                 <div class="slide-content"><h3>Peonies are beautiful</h3><i class="fas fa-heart"></i></div>
               </div>
@@ -120,7 +122,54 @@
           </video>
         </div>
       </section>
+    <section id="about-me" class="section about-me">
+        <div class="container">
+          <h2 class="card-title">Heart-knit. Hand-made. For you.</h2>
+          <p class="text">
+            <strong>
+            Knitting is my peace in the chaos of the world.
+            I knit from the heart, putting care and warmth into every stitch. Each piece is not just an item, but a reflection of my feelings and mood. The threads in my hands come alive in colorful patterns that tell stories of love, tenderness, and care.
+            </strong>
+            Knitting gives me a sense of flow, when thoughts quiet down and the heart speaks. It’s a time when the world around slows down, and there is only me, the yarn, and the movement that creates warmth.
+            My goal is to create beauty not only for myself but also to help those in need. That’s why I knit a sweater in my favorite color for myself and at the same time gift the same sweater to a child for free.
+            Every piece I make is a part of me, my language of love that warms and inspires.
+        </div>
+      </section>
+     <section id="product-slider">
+  <div class="container">
+    <h2>Наші унікальні вироби</h2>
+    <p>Кожен виріб створений з любов’ю і теплом — подивіться самі!</p>
 
+    <div class="slider-container">
+      <div class="slides">
+        <div class="slide"><img src="./image/slider/girls.webp" alt="Product 1" /></div>
+        <div class="slide"><img src="./image/slider/girls-1.webp" alt="Product 2" /></div>
+        <div class="slide"><img src="./image/slider/girl-3.webp" alt="Product 3" /></div>
+        <div class="slide"><img src="./image/slider/girls-4.webp" alt="Product 4" /></div>
+        <div class="slide"><img src="./image/slider/tanya-1.webp" alt="Product 5" /></div>
+        <div class="slide"><img src="./image/slider/girl.webp" alt="Product 6" /></div>
+        <div class="slide"><img src="./image/slider/girls-5.webp" alt="Product 7" /></div>
+        <div class="slide"><img src="./image/slider/girl-6.webp" alt="Product 8" /></div>
+        <div class="slide"><img src="./image/slider/girl-7.webp" alt="Product 9" /></div>
+
+
+      </div>
+
+      <button class="nav-btn prev" aria-label="Previous slide">&#10094;</button>
+      <button class="nav-btn next" aria-label="Next slide">&#10095;</button>
+
+      <div class="dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+        <span class="dot" data-index="3"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      </section>
       <section id="advantages" class="section advantages">
         <h2 class="section-title-my">Bead Embroidery <br> Advantages</h2>
         <ul class="advantages-list">
@@ -144,11 +193,12 @@
       </section>
     </main>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2025 Crafty Creations. Made with love.</p>
-      </div>
-    </footer>
+   <footer>
+  <div class="container">
+    <p>&copy; 2025 Майстерня. Усі права захищено.</p>
+    <p>Зроблено з ❤️ для добрих людей</p>
+  </div>
+</footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
@@ -156,5 +206,7 @@
     <script src="./js/animation.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="./js/swiper-config.js" defer></script>
+    <script src="./js/slidesContainer.js defer> </script>
+
   </body>
 </html>
